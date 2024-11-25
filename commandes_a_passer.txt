@@ -1,2 +1,6 @@
+# installer les requirements sur python 3.10
+pip install -r requirements.txt
 # Commande pour donwloader tous les fichiers FLAIR-2
-wget -i zip_file_addresses.txt -r -P data/
+wget -i zip_file_addresses.txt -r -P data/ -N
+# dézipper tous les fichiers du répertoire data/
+unzip \*.zip -d ~/unzip
