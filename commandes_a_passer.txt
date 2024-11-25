@@ -1,0 +1,2 @@
+# Commande pour donwloader tous les fichiers FLAIR-2
+while IFS= read -r url; do wget -o ${url##*/} "$url"; done < zip_file_addresses.txt
